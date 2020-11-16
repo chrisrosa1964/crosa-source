@@ -5,22 +5,23 @@ using namespace std;
 
 void BubbleSort(int [], const int);
 
+// This is a build trigger change 1
 int main()
 {
-	const int ArraySize = 10;
-	int Array1[ArraySize];
+ const int ArraySize = 10;
+ int Array1[ArraySize];
 
-	srand(time(NULL));
-	for (int i = 0; i < ArraySize ; i++)
-		Array1[i] = 1 + rand() % 100;
-	cout << "Before sorting:\n";
-	for (int j = 0 ; j < ArraySize ; j++)
-		cout << Array1[j] << "  ";
-	cout << "\n";
+ srand(time(NULL));
+ for (int i = 0; i < ArraySize ; i++)
+  Array1[i] = 1 + rand() % 100;
+ cout << "Before sorting:\n";
+ for (int j = 0 ; j < ArraySize ; j++)
+  cout << Array1[j] << "  ";
+ cout << "\n";
 
-	BubbleSort (Array1,ArraySize);
+ BubbleSort (Array1,ArraySize);
 	
-	return 0;
+ return 0;
 }
 
 void BubbleSort(int Array1[], const int ArraySize)
